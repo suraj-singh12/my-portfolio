@@ -1,7 +1,7 @@
 function App() {
   return (
     <div className="flex w-screen h-screen items-center justify-center">
-      <p>Hi there</p>
+      <p className="text-2xl">Hi there, how are you</p>
     </div>
   );
 }
