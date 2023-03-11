@@ -1,12 +1,13 @@
 import Spline from "@splinetool/react-spline";
 import { useState } from "react";
-import { IoCodeWorking, IoMenu } from "react-icons/io5";
+import { IoMenu, IoLogoGithub } from "react-icons/io5";
 import ProfilePhoto from "./images/suraj.jpg";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import { Experience, Projects} from "./data";
 
 function App() {
   const [isActive, setIsActive] = useState(false);
@@ -114,6 +115,7 @@ function App() {
         </div>
       </nav>
 
+      {/* 3d desing */}
       <div className="relative" id="home">
         <Spline scene="https://draft.spline.design/1SIsKQFH-TVtEI-0/scene.spline" />
 
@@ -175,25 +177,73 @@ function App() {
           </div>
         </section>
 
-
-        {/* Vertical Timeline */}
+        {/* Vertical Timeline (Work Experience) Section*/}
         <section className="w-full flex items-center justify-center">
           <VerticalTimeline>
-            <VerticalTimelineElement
-              className="vertical-timeline-element--work"
-              contentStyle={{ background: 'rgb(21, 24, 31)', color: '#888' }}
-              contentArrowStyle={{ borderRight: '7px solid  rgb(21, 24, 31)' }}
-              date="2011 - present"
-              iconStyle={{ background: 'rgb(21, 24, 31)', color: '#888' }}
-              icon={<IoCodeWorking />}
-            >
-              <h3 className="vertical-timeline-element-title">Creative Director</h3>
-              <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-              <p>
-                Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-              </p>
-            </VerticalTimelineElement>
+            {Experience &&
+              Experience.map((item) => (
+                <VerticalTimelineElement
+                  key={item.id}
+                  className="vertical-timeline-element--work"
+                  contentStyle={{
+                    background: "rgb(21, 24, 31)",
+                    color: "#888",
+                  }}
+                  contentArrowStyle={{
+                    borderRight: "7px solid  rgb(21, 24, 31)",
+                  }}
+                  date={item.date}
+                  iconStyle={{ background: "rgb(21, 24, 31)", color: "#888" }}
+                  icon={item.iconsSrc}
+                >
+                  <h3 className="vertical-timeline-element-title">
+                    {item.title}
+                  </h3>
+                  <h4 className="vertical-timeline-element-subtitle">
+                    {item.location}
+                  </h4>
+                  <p>{item.description}</p>
+                </VerticalTimelineElement>
+              ))}
           </VerticalTimeline>
+        </section>
+
+        {/* Projects Section */}
+        <section className="flex flex-wrap items-center justify-evenly my-24 gap4 ">
+          {
+            Projects && 
+            Projects.map((item) => (
+              <div key={item.id} 
+                className="border border-zinc-800 rounded-md p-2 min-w-[275px]
+              md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out"
+              >
+                <p className="text-md text-textBase text-ellipses font-medium uppercase text-center">
+                {item.name.length > 25 ? `${item.name.slice(0,20)}...`: item.name}
+                </p>
+
+                <img
+                  src={item.imageSrc}
+                  className="w-full h-full object-cover rounded-md my-4"
+                  alt="project1"
+                />
+
+                <div className="flex flex-1 items-center justify-between">
+                  
+                  <p className="text-lg text-gray-300">
+                    Technologies
+                    <span className="block text-sm text-gray-500">
+                      {item.techs}
+                    </span>
+                  </p>
+                  <a href={item.github}>
+                    <div>
+                      <IoLogoGithub className="text-textBase text-3xl cursor-pointer" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            ))
+          }
         </section>
       </main>
     </div>

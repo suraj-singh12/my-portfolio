@@ -1,4 +1,11 @@
 import { IoCodeWorking } from "react-icons/io5";
+import img1 from "./images/thumb-fooddeliveryapp-reactjs-dec.png";
+import img2 from "./images/thumb-fullstack-socialmedia-app-react-sanity.png";
+import img3 from "./images/thumb-google-map-clone-nextjs-feb22.png";
+import img4 from "./images/thumb-pinterest-clone-reactjs.png";
+import img5 from "./images/thumb-videoblog-firebase-reactjs-feb-22.png";
+import img6 from "./images/thumb-whatsappui-clone-nextjs.png";
+
 
 export const Experience = [
     {
@@ -47,3 +54,48 @@ export const Experience = [
         "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
     },
   ];
+
+  export const Projects = [
+    {
+      id: 1,
+      name: "Food Delivery UI Mockup",
+      imageSrc: img1,
+      techs: "React Js, Redux, Material UI",
+      github: "https://github.com/suraj-singh12/",
+    },
+    {
+      id: 2,
+      name: "Full Stack Social Media App ",
+      imageSrc: img2,
+      techs: "React Js, Sanity, Tailwind CSS",
+      github: "https://github.com/suraj-singh12/",
+    },
+    {
+      id: 3,
+      name: "Travel Advisor",
+      imageSrc: img3,
+      techs: "React Js, Chakra UI, Google API",
+      github: "https://github.com/suraj-singh12/",
+    },
+    {
+      id: 4,
+      name: "Pintrest UI Clone 2.0 ",
+      imageSrc: img4,
+      techs: "React Js,  Material UI",
+      github: "https://github.com/suraj-singh12/",
+    },
+    {
+      id: 5,
+      name: "Own Video Blog",
+      imageSrc: img5,
+      techs: "React Js, Chara UI, Firebase",
+      github: "https://github.com/suraj-singh12/",
+    },
+    {
+      id: 6,
+      name: "Whatsapp UI Clone",
+      imageSrc: img6,
+      techs: "NextJs, Firebase Auth",
+      github: "https://github.com/suraj-singh12/",
+    },
+  ]; 
