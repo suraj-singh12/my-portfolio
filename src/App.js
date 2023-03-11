@@ -1,7 +1,12 @@
 import Spline from "@splinetool/react-spline";
 import { useState } from "react";
-import { IoMenu } from "react-icons/io5";
+import { IoCodeWorking, IoMenu } from "react-icons/io5";
 import ProfilePhoto from "./images/suraj.jpg";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
 
 function App() {
   const [isActive, setIsActive] = useState(false);
@@ -168,6 +173,27 @@ function App() {
               </span>
             </button>
           </div>
+        </section>
+
+
+        {/* Vertical Timeline */}
+        <section className="w-full flex items-center justify-center">
+          <VerticalTimeline>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+              contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+              date="2011 - present"
+              iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+              icon={<IoCodeWorking />}
+            >
+              <h3 className="vertical-timeline-element-title">Creative Director</h3>
+              <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+              <p>
+                Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+              </p>
+            </VerticalTimelineElement>
+          </VerticalTimeline>
         </section>
       </main>
     </div>
