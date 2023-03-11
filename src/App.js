@@ -214,8 +214,8 @@ function App() {
             Projects && 
             Projects.map((item) => (
               <div key={item.id} 
-                className="border border-zinc-800 rounded-md p-2 min-w-[275px]
-              md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out"
+                className="border border-zinc-800 rounded-md p-4 min-w-[275px]
+              md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out mb-5"
               >
                 <p className="text-md text-textBase text-ellipses font-medium uppercase text-center">
                 {item.name.length > 25 ? `${item.name.slice(0,20)}...`: item.name}
@@ -244,6 +244,19 @@ function App() {
               </div>
             ))
           }
+        </section>
+
+        {/* Contact Section */}
+        <section className="flex flex-col items-center justify-center w-full my-24" id="contact">
+          <p className="text-2xl text-gray-400 capitalize">Follow me on</p>
+          <div className="flex items-center justify-center w-full my-4 flex-wrap gap-4">
+            <a href="#" className="w-full md:w-auto px-3 md:px-8 py-5 border 
+            border-zinc-800 rounded-2xl hover:border-zinc-600 duration-100
+            ease-in-out cursor-pointer flex items-center justify-center gap-3">
+              <IoLogoGithub className="text-textBase text-3xl cursor-pointer"/> 
+              <p className="text-lg text-textBase">Github</p>
+            </a>
+          </div>
         </section>
       </main>
     </div>
