@@ -130,7 +130,7 @@ function App() {
         {/* About section */}
         <section
           className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 my-24"
-          id="#about"
+          id="about"
         >
           {/* image box*/}
           <div className="w-full h-420 flex items-center justify-center">
@@ -209,7 +209,7 @@ function App() {
         </section>
 
         {/* Projects Section */}
-        <section className="flex flex-wrap items-center justify-evenly my-24 gap4 ">
+        <section className="flex flex-wrap items-center justify-evenly my-24 gap4" id="projects">
           {
             Projects && 
             Projects.map((item) => (
