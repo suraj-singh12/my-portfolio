@@ -4,104 +4,105 @@ import { IoCodeWorking,
   IoLogoTwitter,
   IoLogoLinkedin,
   IoLogoWhatsapp} from "react-icons/io5";
-import img1 from "./images/thumb-fooddeliveryapp-reactjs-dec.png";
-import img2 from "./images/thumb-fullstack-socialmedia-app-react-sanity.png";
-import img3 from "./images/thumb-google-map-clone-nextjs-feb22.png";
-import img4 from "./images/thumb-pinterest-clone-reactjs.png";
-import img5 from "./images/thumb-videoblog-firebase-reactjs-feb-22.png";
-import img6 from "./images/thumb-whatsappui-clone-nextjs.png";
+import img1 from "./images/fkart-min.jpg";
+import img2 from "./images/projects-library-min.jpg";
+import img3 from "./images/project-search-everywhere.jpeg";
+import img4 from "./images/any-to-pdf.png";
+import img5 from "./images/bash-scripts-min.jpg";
+import img6 from "./images/project-rahat.png"
 
 
 export const Experience = [
-    {
-      id: 1,
-      date: "2016 - present",
-      iconsSrc: <IoCodeWorking />,
-      title: "Creative Director",
-      location: "Doha, Qatar",
-      description:
-        "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
-    },
+    // {
+    //   id: 1,
+    //   date: "2016 - present",
+    //   iconsSrc: <IoCodeWorking />,
+    //   title: "Creative Director",
+    //   location: "Doha, Qatar",
+    //   description:
+    //     "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+    // },
     {
       id: 2,
-      date: "2014 - 2016",
+      date: "Jan 2022",
       iconsSrc: <IoCodeWorking />,
-      title: "Creative Director",
-      location: "Doha, Qatar",
+      title: "UltraHacx Hackathon",
+      location: "LPU, Punjab",
       description:
-        "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+        "Ethereum · Blockchain · React.js · REST APIs",
     },
     {
       id: 3,
-      date: "2012 - 2014",
+      date: "Feb 2022 - Aug 2022",
       iconsSrc: <IoCodeWorking />,
-      title: "Creative Director",
-      location: "Doha, Qatar",
+      title: "Full Stack Web Developer | Edureka",
+      location: "Remote",
       description:
-        "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+        "JavaScript · ReactJS · NodeJS · ExpressJS · MongoDB · REST APIs · Responsive Web Design",
+        // Front-End Development · Back-End Web Development · 
     },
     {
       id: 4,
-      date: "2011 - 2012",
+      date: "June 2022",
       iconsSrc: <IoCodeWorking />,
-      title: "Creative Director",
-      location: "Doha, Qatar",
+      title: "Code For Good | JPMorgan Chase",
+      location: "Remote",
       description:
-        "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+        "HTML5 · CSS3 · Responsive Web Design · React.js · Node.js · MongoDB · Git",
     },
     {
       id: 5,
-      date: "2010 - 2011",
+      date: "Aug 2021 - May 2022",
       iconsSrc: <IoCodeWorking />,
-      title: "Creative Director",
-      location: "Doha, Qatar",
+      title: "Technical Team Member | GeeksForGeeks",
+      location: "LPU, Punjab",
       description:
-        "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
+        " Data Structures · Technical Support · Java · Problem Solving · C++",
     },
   ];
 
   export const Projects = [
     {
       id: 1,
-      name: "Food Delivery UI Mockup",
+      name: "Fkart APP | MERN ",
       imageSrc: img1,
-      techs: "React Js, Redux, Material UI",
-      github: "https://github.com/suraj-singh12/",
+      techs: "NodeJS, ReactJS, Bootstrap, ExpressJS, Mongodb, REST APIs",
+      github: "https://github.com/suraj-singh12/flipkart-project",
     },
     {
       id: 2,
-      name: "Full Stack Social Media App ",
+      name: "Projects Library | React",
       imageSrc: img2,
-      techs: "React Js, Sanity, Tailwind CSS",
-      github: "https://github.com/suraj-singh12/",
+      techs: "HTML5, CSS3, JavaScript, React Js, Node JS",
+      github: "https://github.com/suraj-singh12/projects-library",
     },
     {
       id: 3,
-      name: "Travel Advisor",
+      name: "SearchEveryWhere | Linux",
       imageSrc: img3,
-      techs: "React Js, Chakra UI, Google API",
-      github: "https://github.com/suraj-singh12/",
+      techs: "grep, search, linux, ubuntu, python3, bash scripts",
+      github: "https://github.com/suraj-singh12/Project-SearchEverywhere",
     },
     {
       id: 4,
-      name: "Pintrest UI Clone 2.0 ",
-      imageSrc: img4,
-      techs: "React Js,  Material UI",
+      name: "Rahat | Crossplatform",
+      imageSrc: img6,
+      techs: "PyQT5, PostGre SQL, python3, qtdesigner pycharm-ide",
       github: "https://github.com/suraj-singh12/",
     },
     {
       id: 5,
-      name: "Own Video Blog",
+      name: "Bash Scripts",
       imageSrc: img5,
-      techs: "React Js, Chara UI, Firebase",
-      github: "https://github.com/suraj-singh12/",
+      techs: "linux, bash, linux-desktop, scripting, enhancements",
+      github: "https://github.com/suraj-singh12/BashScripts",
     },
     {
       id: 6,
-      name: "Whatsapp UI Clone",
-      imageSrc: img6,
-      techs: "NextJs, Firebase Auth",
-      github: "https://github.com/suraj-singh12/",
+      name: "Any To PDF",
+      imageSrc: img4,
+      techs: "Python3, Tkinter, ppt, docs, img, txt to pdf convertor",
+      github: "https://github.com/suraj-singh12/any-to-pdf",
     },
   ]; 
 
@@ -112,12 +113,12 @@ export const Experience = [
       name: "GitHub",
       link: "https://github.com/suraj-singh12",
     },
-    {
-      id: 2,
-      iconSrc: <IoLogoYoutube className="text-red-500 text-3xl cursor-pointer" />,
-      name: "YouTube",
-      link: "#",
-    },
+    // {
+    //   id: 2,
+    //   iconSrc: <IoLogoYoutube className="text-red-500 text-3xl cursor-pointer" />,
+    //   name: "YouTube",
+    //   link: "#",
+    // },
     {
       id: 3,
       iconSrc: (
@@ -134,14 +135,14 @@ export const Experience = [
       name: "LinkedIn",
       link: "https://www.linkedin.com/in/suraj-singh-5092/",
     },
-    {
-      id: 5,
-      iconSrc: (
-        <IoLogoWhatsapp className="text-green-500 text-3xl cursor-pointer" />
-      ),
-      name: "Whatsapp",
-      link: "https://wa.me/<number>",
-    },
+    // {
+    //   id: 5,
+    //   iconSrc: (
+    //     <IoLogoWhatsapp className="text-green-500 text-3xl cursor-pointer" />
+    //   ),
+    //   name: "Whatsapp",
+    //   link: "https://wa.me/<number>",
+    // },
     // {
     //   id:  6,
     //   iconSrc: (

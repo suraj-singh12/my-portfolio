@@ -72,8 +72,8 @@ function App() {
               <motion.div
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1.1 }}
-                exit={{ opacity: 0, scale: 0.5 }}              
-                transition={{ delay: '0.1', type: 'spring' }}
+                exit={{ opacity: 0, scale: 0.5 }}
+                transition={{ delay: "0.1", type: "spring" }}
                 className="p-4 w-275 bg-navBar rounded-lg fixed top-24 right-16 flex flex-col items-center
               justify-evenly gap-6"
               >
@@ -111,7 +111,7 @@ function App() {
                 </a>
 
                 <motion.a
-                  whileTap={{scale: 0.8}}
+                  whileTap={{ scale: 0.8 }}
                   href="#download"
                   className="text-base text-textBase font-medium hover:text-slate-100 cursor-pointer border
                 border-textBase px-2 py-1 rounded-xl hover:border-gray-100 duration-100  ease-in-out"
@@ -156,17 +156,21 @@ function App() {
             {/* content box */}
             <div className="w-full h-420 flex flex-col items-center justify-center">
               <p className="text-lg text-textBase text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Veritatis incidunt, odio asperiores dolorem rem praesentium
-                consequuntur minima eaque quis. Magni tenetur cumque
-                necessitatibus porro esse suscipit rem, vel animi nobis! Lorem
-                ipsum dolor sit amet consectetur adipisicing elit. Illum
-                perspiciatis laborum, recusandae repellat eius ex et repellendus
-                itaque incidunt error eligendi, molestiae libero qui tempora
-                quae, inventore possimus natus nulla.
+                Hey there, web world!
+              </p>
+              <p className="text-lg text-textBase text-center">
+                I'm a MERN stack developer specializing in
+                creating stunning and responsive web applications. 
+                As a detail-oriented team player with good communication skills,
+                I'm committed to delivering quality work within tight deadlines
+                while staying up to date with the latest technologies.
+              </p>
+              <p className="text-lg text-textBase mt-5 text-center">
+              Find my CV below!
               </p>
 
-              <button
+              <motion.button
+                whileTap={{ scale: 0.8 }}
                 className="w-full md:w-auto relative mt-6 inline-flex items-center 
               justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium 
               text-gray-900 rounded-lg group bg-gray-900 bg-gradient-to-br from-green-400 to-blue-600 
@@ -175,15 +179,14 @@ function App() {
               dark:focus:ring-green-800 hover:shadow-lg hover:shadow-teal-500/50 hover:dark:shadow-lg 
               hover:dark:shadow-teal-800/80"
               >
-                <motion.span
-                  whileTap={{scale: 0.8}}
+                <span
                   className="w-full relative px-5 py-2.5 
                 transition-all ease-in duration-75 bg-white dark:bg-gray-900 
                 rounded-md group-hover:bg-opacity-0"
                 >
                   Download
-                </motion.span>
-              </button>
+                </span>
+              </motion.button>
             </div>
           </section>
 
@@ -220,7 +223,7 @@ function App() {
 
           {/* Projects Section */}
           <section
-            className="flex flex-wrap items-center justify-evenly my-24 gap4"
+            className="flex flex-wrap items-center justify-around my-24 gap4"
             id="projects"
           >
             {Projects &&
@@ -228,7 +231,7 @@ function App() {
                 <div
                   key={item.id}
                   className="border border-zinc-800 rounded-md p-4 min-w-[275px]
-                md:max-w-[275px] hover:border-zinc-600 duration-100 ease-in-out mb-5"
+                md:max-w-[320px] hover:border-zinc-600 duration-100 ease-in-out mb-5"
                 >
                   <p className="text-md text-textBase text-ellipses font-medium uppercase text-center">
                     {item.name.length > 25
@@ -249,10 +252,10 @@ function App() {
                         {item.techs}
                       </span>
                     </p>
-                    <a href={item.github}>
-                      <div>
+                    <a href={item.github} target="_blank" rel="noreferrer">
+                      <motion.div whileTap={{ scale: 0.8 }}>
                         <IoLogoGithub className="text-textBase text-3xl cursor-pointer" />
-                      </div>
+                      </motion.div>
                     </a>
                   </div>
                 </div>
@@ -268,16 +271,19 @@ function App() {
             <div className="flex items-center justify-center w-full my-4 flex-wrap gap-4">
               {SocialLinks &&
                 SocialLinks.map((item) => (
-                  <a
+                  <motion.a
+                    whileTap={{ scale: 0.8 }}
                     href={item.link}
                     key={item.id}
                     className="w-full md:w-auto px-3 md:px-8 py-5 border 
                   border-zinc-800 rounded-2xl hover:border-zinc-600 duration-100
                   ease-in-out cursor-pointer flex items-center justify-center gap-3"
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     {item.iconSrc}
                     <p className="text-lg text-textBase">{item.name}</p>
-                  </a>
+                  </motion.a>
                 ))}
             </div>
           </section>
