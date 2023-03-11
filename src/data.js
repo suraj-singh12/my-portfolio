@@ -3,8 +3,7 @@ import { IoCodeWorking,
   IoLogoYoutube,
   IoLogoTwitter,
   IoLogoLinkedin,
-  IoLogoWhatsapp,
-  IoMail} from "react-icons/io5";
+  IoLogoWhatsapp} from "react-icons/io5";
 import img1 from "./images/thumb-fooddeliveryapp-reactjs-dec.png";
 import img2 from "./images/thumb-fullstack-socialmedia-app-react-sanity.png";
 import img3 from "./images/thumb-google-map-clone-nextjs-feb22.png";
@@ -113,12 +112,12 @@ export const Experience = [
       name: "GitHub",
       link: "https://github.com/suraj-singh12",
     },
-    // {
-    //   id: 2,
-    //   iconSrc: <IoLogoYoutube className="text-red-500 text-3xl cursor-pointer" />,
-    //   name: "YouTube",
-    //   link: "#",
-    // },
+    {
+      id: 2,
+      iconSrc: <IoLogoYoutube className="text-red-500 text-3xl cursor-pointer" />,
+      name: "YouTube",
+      link: "#",
+    },
     {
       id: 3,
       iconSrc: (
@@ -135,14 +134,14 @@ export const Experience = [
       name: "LinkedIn",
       link: "https://www.linkedin.com/in/suraj-singh-5092/",
     },
-    // {
-    //   id: 5,
-    //   iconSrc: (
-    //     <IoLogoWhatsapp className="text-green-500 text-3xl cursor-pointer" />
-    //   ),
-    //   name: "Whatsapp",
-    //   link: "https://wa.me/<number>",
-    // },
+    {
+      id: 5,
+      iconSrc: (
+        <IoLogoWhatsapp className="text-green-500 text-3xl cursor-pointer" />
+      ),
+      name: "Whatsapp",
+      link: "https://wa.me/<number>",
+    },
     // {
     //   id:  6,
     //   iconSrc: (
