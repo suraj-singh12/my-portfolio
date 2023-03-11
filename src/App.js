@@ -110,14 +110,15 @@ function App() {
                   Contact
                 </a>
 
-                <a
+                <motion.a
+                  whileTap={{scale: 0.8}}
                   href="#download"
                   className="text-base text-textBase font-medium hover:text-slate-100 cursor-pointer border
                 border-textBase px-2 py-1 rounded-xl hover:border-gray-100 duration-100  ease-in-out"
                   onClick={() => setIsActive(false)}
                 >
                   Download
-                </a>
+                </motion.a>
               </motion.div>
             )}
           </div>
@@ -174,13 +175,14 @@ function App() {
               dark:focus:ring-green-800 hover:shadow-lg hover:shadow-teal-500/50 hover:dark:shadow-lg 
               hover:dark:shadow-teal-800/80"
               >
-                <span
+                <motion.span
+                  whileTap={{scale: 0.8}}
                   className="w-full relative px-5 py-2.5 
                 transition-all ease-in duration-75 bg-white dark:bg-gray-900 
                 rounded-md group-hover:bg-opacity-0"
                 >
                   Download
-                </span>
+                </motion.span>
               </button>
             </div>
           </section>
