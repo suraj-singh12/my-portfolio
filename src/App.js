@@ -181,10 +181,10 @@ function App() {
           <VerticalTimeline>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-              contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+              contentStyle={{ background: 'rgb(21, 24, 31)', color: '#888' }}
+              contentArrowStyle={{ borderRight: '7px solid  rgb(21, 24, 31)' }}
               date="2011 - present"
-              iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+              iconStyle={{ background: 'rgb(21, 24, 31)', color: '#888' }}
               icon={<IoCodeWorking />}
             >
               <h3 className="vertical-timeline-element-title">Creative Director</h3>
