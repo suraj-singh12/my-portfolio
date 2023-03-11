@@ -1,9 +1,8 @@
 import { IoCodeWorking,
   IoLogoGithub,
-  IoLogoYoutube,
   IoLogoTwitter,
   IoLogoLinkedin,
-  IoLogoWhatsapp} from "react-icons/io5";
+  } from "react-icons/io5";
 import img1 from "./images/fkart-min.jpg";
 import img2 from "./images/projects-library-min.jpg";
 import img3 from "./images/project-search-everywhere.jpeg";
@@ -29,7 +28,7 @@ export const Experience = [
       title: "UltraHacx Hackathon",
       location: "LPU, Punjab",
       description:
-        "Ethereum · Blockchain · React.js · REST APIs",
+        "Ethereum · Blockchain · React.js · Node.js · REST APIs",
     },
     {
       id: 3,
@@ -78,17 +77,17 @@ export const Experience = [
     },
     {
       id: 3,
-      name: "SearchEveryWhere | Linux",
+      name: "Search-EveryWhere | Linux",
       imageSrc: img3,
       techs: "grep, search, linux, ubuntu, python3, bash scripts",
       github: "https://github.com/suraj-singh12/Project-SearchEverywhere",
     },
     {
       id: 4,
-      name: "Rahat | Crossplatform",
+      name: "Rahat | Cross-platform",
       imageSrc: img6,
       techs: "PyQT5, PostGre SQL, python3, qtdesigner pycharm-ide",
-      github: "https://github.com/suraj-singh12/",
+      github: "https://github.com/suraj-singh12/Project-Rahat",
     },
     {
       id: 5,
@@ -153,3 +152,6 @@ export const Experience = [
     // }
   ];
   
+export const Resume = {
+  link: 'https://drive.google.com/u/0/uc?id=1MPITmZ1dbwTZeEwWOPUkHqU5bLjE0sXc&export=download'
+}

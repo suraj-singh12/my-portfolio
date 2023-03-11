@@ -7,9 +7,8 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { Experience, Projects, SocialLinks } from "./data";
+import { Experience, Projects, SocialLinks, Resume} from "./data";
 import { AnimatePresence, motion } from "framer-motion";
-
 function App() {
   const [isActive, setIsActive] = useState(false);
 
@@ -52,7 +51,7 @@ function App() {
               </a>
 
               <a
-                href="#download"
+                href={Resume.link}
                 className="ml-auto text-base text-textBase font-medium hover:text-slate-100 cursor-pointer border
               border-textBase px-2 py-1 rounded-xl hover:border-gray-100 duration-100  ease-in-out"
               >
@@ -112,7 +111,7 @@ function App() {
 
                 <motion.a
                   whileTap={{ scale: 0.8 }}
-                  href="#download"
+                  href={Resume.link}
                   className="text-base text-textBase font-medium hover:text-slate-100 cursor-pointer border
                 border-textBase px-2 py-1 rounded-xl hover:border-gray-100 duration-100  ease-in-out"
                   onClick={() => setIsActive(false)}
@@ -155,18 +154,30 @@ function App() {
 
             {/* content box */}
             <div className="w-full h-420 flex flex-col items-center justify-center">
-              <p className="text-lg text-textBase text-center">
+              {/* <p className="text-lg text-textBase text-center">
                 Hey there, web world!
-              </p>
+              </p> */}
               <p className="text-lg text-textBase text-center">
                 I'm a MERN stack developer specializing in
                 creating stunning and responsive web applications. 
                 As a detail-oriented team player with good communication skills,
                 I'm committed to delivering quality work within tight deadlines
                 while staying up to date with the latest technologies.
+                {/* I am a MERN stack web developer, as well as an open-source
+                contributor. I like to work on real-life projects that
+                contribute to the good of society. Some of such projects that I
+                have worked on are "Project Rahat", and "Project
+                SearchEverywhere". */}
               </p>
+              {/* <p className="text-lg text-textBase text-center">
+                I am comfortable working in new environments and teams and
+                quickly match the required pace. I am always looking to learn
+                more and upgrade myself each day. New technologies bring new
+                ways to solve real-world problems, and this is what makes me
+                eager to master them.
+              </p> */}
               <p className="text-lg text-textBase mt-5 text-center">
-              Find my CV below!
+                Find my CV below!
               </p>
 
               <motion.button
@@ -179,13 +190,13 @@ function App() {
               dark:focus:ring-green-800 hover:shadow-lg hover:shadow-teal-500/50 hover:dark:shadow-lg 
               hover:dark:shadow-teal-800/80"
               >
-                <span
+                <a href={Resume.link}
                   className="w-full relative px-5 py-2.5 
                 transition-all ease-in duration-75 bg-white dark:bg-gray-900 
                 rounded-md group-hover:bg-opacity-0"
                 >
                   Download
-                </span>
+                </a>
               </motion.button>
             </div>
           </section>
