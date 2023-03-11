@@ -125,8 +125,9 @@ function App() {
         <section className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 my-24" id="#about">
           {/* image box*/}
           <div className="w-full h-420 flex items-center justify-center">
-            <div className="w-275 h-340 bg-emerald-200 rounded-md">
-              <img src={ProfilePhoto} alt="user profile" />
+            <div className="w-275 h-340 bg-emerald-200 rounded-md relative">
+              <img className="w-full h-full absolute -right-4 top-4 object-cover
+              rounded-lg drop-shadow-2xl " src={ProfilePhoto} alt="user profile" />
             </div>
           </div>
           {/* content box */}
