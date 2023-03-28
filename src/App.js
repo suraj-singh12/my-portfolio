@@ -9,6 +9,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { Experience, Projects, SocialLinks, Resume} from "./data";
 import { AnimatePresence, motion } from "framer-motion";
+
 function App() {
   const [isActive, setIsActive] = useState(false);
 
@@ -157,7 +158,7 @@ function App() {
               {/* <p className="text-lg text-textBase text-center">
                 Hey there, web world!
               </p> */}
-              <p className="text-lg text-textBase text-center">
+              <p className="text-lg text-slate-200 text-center">
                 I'm a MERN stack developer specializing in
                 creating stunning and responsive web applications. 
                 As a detail-oriented team player with good communication skills,
@@ -176,7 +177,7 @@ function App() {
                 ways to solve real-world problems, and this is what makes me
                 eager to master them.
               </p> */}
-              <p className="text-lg text-textBase mt-5 text-center">
+              <p className="text-lg text-slate-400 mt-5 text-center">
                 Find my CV below!
               </p>
 
@@ -210,24 +211,26 @@ function App() {
                     key={item.id}
                     className="vertical-timeline-element--work"
                     contentStyle={{
-                      background: "rgb(21, 24, 31)",
-                      color: "#888",
+                      background: "#1f1f28",
+                      color: "white",
+                      borderRadius: '25px',
+                      boxShadow: 'rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset',
                     }}
                     contentArrowStyle={{
-                      borderRight: "7px solid  rgb(21, 24, 31)",
+                      borderRight: "7px solid rgb(21, 24, 31)",
                     }}
                     date={item.date}
                     iconStyle={{ background: "rgb(21, 24, 31)", color: "#888" }}
                     icon={item.iconsSrc}
                   >
-                    <h3 className="vertical-timeline-element-title">
-                      {item.title}
-                    </h3>
-                    <h4 className="vertical-timeline-element-subtitle">
-                      {item.location}
-                    </h4>
-                    <p>{item.description}</p>
-                    <p>{item.techStack}</p>
+                      <h3 className="vertical-timeline-element-title font-bold text-slate-100">
+                        {item.title}
+                      </h3>
+                      <h4 className="vertical-timeline-element-subtitle italic text-slate-400">
+                        {item.location}
+                      </h4>
+                      <p className="text-slate-300">{item.description}</p>
+                      <p className="text-slate-400">{item.techStack}</p>
                   </VerticalTimelineElement>
                 ))}
             </VerticalTimeline>
@@ -235,17 +238,19 @@ function App() {
 
           {/* Projects Section */}
           <section
-            className="flex flex-wrap items-center justify-around my-24 gap4"
+            className="flex flex-wrap items-center justify-around my-32 gap-6"
             id="projects"
           >
             {Projects &&
               Projects.map((item) => (
-                <div
+                <a href={item.github} target="_blank" rel="noreferrer"
                   key={item.id}
-                  className="border border-zinc-800 rounded-md p-4 min-w-[275px]
-                md:max-w-[320px] hover:border-zinc-600 duration-100 ease-in-out mb-5"
+                  className="border border-zinc-800 rounded-lg p-4 min-w-[275px]
+                md:max-w-[320px] hover:border-zinc-600 hover:scale-105 duration-100 ease-in-out mb-5 bg-[#1f1f28] text-textBase 
+                shadow-lg shadow-gray-900 hover:text-[white]"
                 >
-                  <p className="text-md text-textBase text-ellipses font-medium uppercase text-center">
+                  
+                  <p className="text-md text-slate-300 text-ellipses font-medium uppercase text-center text-[inherit]">
                     {item.name.length > 25
                       ? `${item.name.slice(0, 20)}...`
                       : item.name}
@@ -257,10 +262,10 @@ function App() {
                     alt="project1"
                   />
 
-                  <div className="flex flex-1 items-center justify-between">
-                    <p className="text-lg text-gray-300">
+                  <div className="flex flex-1 items-center justify-between cursor-pointer">
+                    <p className="text-lg text-gray-300 cursor-pointer">
                       Technologies
-                      <span className="block text-sm text-gray-500">
+                      <span className="block text-sm text-slate-400 capitalize cursor-pointer">
                         {item.techs}
                       </span>
                     </p>
@@ -270,7 +275,7 @@ function App() {
                       </motion.div>
                     </a>
                   </div>
-                </div>
+                </a>
               ))}
           </section>
 

@@ -23,7 +23,7 @@ export const Experience = [
     // },
     {
       id: 2,
-      date: "Jan 202",
+      date: "Jan 2022",
       iconsSrc: <IoCodeWorking />,
       title: "UltraHacx Hackathon",
       location: "LPU, Punjab",
