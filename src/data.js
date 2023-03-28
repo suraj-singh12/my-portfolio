@@ -28,7 +28,8 @@ export const Experience = [
       title: "UltraHacx Hackathon",
       location: "LPU, Punjab",
       description:
-        "Ethereum · Blockchain · React.js · Node.js · REST APIs",
+        "Developed a Certificate-indexing web app that assigns a score according to the nature and credibility of the certificate and credits the owner with equivalent coins.",
+      techStack: 'Ethereum · Blockchain · React.js · Node.js · REST APIs'
     },
     {
       id: 3,
@@ -36,7 +37,9 @@ export const Experience = [
       iconsSrc: <IoCodeWorking />,
       title: "Full Stack Web Developer | Edureka",
       location: "Remote",
-      description:
+      description: 
+        "Worked on 2 web applications: Fkart App, and Zomato Clone and implemented the same using the MERN Technologies from scratch in a deadline-driven environment.",
+      techStack:
         "JavaScript · ReactJS · NodeJS · ExpressJS · MongoDB · REST APIs · Responsive Web Design",
         // Front-End Development · Back-End Web Development · 
     },
@@ -47,6 +50,8 @@ export const Experience = [
       title: "Code For Good | JPMorgan Chase",
       location: "Remote",
       description:
+        "Developed a comprehensive website utilizing the MERN Stack for online education, including live scheduling, content sharing, performance tracking, and analysis of student and teacher progress.",
+      techStack:
         "HTML5 · CSS3 · Responsive Web Design · React.js · Node.js · MongoDB · Git",
     },
     {
@@ -56,6 +61,8 @@ export const Experience = [
       title: "Technical Team Member | GeeksForGeeks",
       location: "LPU, Punjab",
       description:
+        "Worked as a Technical Team Member in the GeeksForGeeks Student Chapter at Lovely Professional University. I was responsible for conducting technical sessions when things were in online mode.",
+      techStack:
         " Data Structures · Technical Support · Java · Problem Solving · C++",
     },
   ];

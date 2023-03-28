@@ -227,6 +227,7 @@ function App() {
                       {item.location}
                     </h4>
                     <p>{item.description}</p>
+                    <p>{item.techStack}</p>
                   </VerticalTimelineElement>
                 ))}
             </VerticalTimeline>
