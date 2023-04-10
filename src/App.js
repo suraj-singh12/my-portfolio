@@ -238,7 +238,7 @@ function App() {
 
           {/* Projects Section */}
           <section
-            className="flex flex-wrap items-center justify-around my-32 gap-6"
+            className="flex flex-wrap items-center justify-around my-24 gap-6"
             id="projects"
           >
             {Projects &&
@@ -280,11 +280,29 @@ function App() {
           </section>
 
           {/* Contact Section */}
+          <section className="text-gray-300 font-medium w-11/12 flex flex-col m-auto my-4" id="contact">
+            <p className="text-center text-3xl pb-5">Contact</p>
+              <label htmlFor="uname" className="flex flex-col text-xl">Name: 
+                <input type="text" name="uname" className="h-14 font-medium text-black rounded-md px-4 bg-gray-300"/>
+              </label>
+              <label htmlFor="email" className="flex flex-col py-7 text-xl">Email:
+                <input type="email" name="email" className="h-14 font-medium text-black rounded-md px-4 bg-gray-300"/>
+              </label>
+              <label htmlFor="query" className="flex flex-col py-2 text-xl">Message:
+                <textarea name="" id="" cols="30" rows="5" className="font-medium text-black rounded-md p-4 bg-gray-300"></textarea>
+              </label>
+              <div className="float-right">
+                <button className="rounded-lg outline outline-offset-2 
+                outline-gray-500 bg-slate-800 mt-3 w-1/6 float-right h-10">Submit</button>
+              </div>
+          </section>
+
+          {/* Social Section */}
           <section
-            className="flex flex-col items-center justify-center w-full my-24"
-            id="contact"
+            className="flex flex-col items-center justify-center w-full mt-16"
+            id="social"
           >
-            <p className="text-2xl text-gray-400 capitalize">Follow me on</p>
+            <p className="text-2xl text-gray-400 font-medium capitalize">Follow me on</p>
             <div className="flex items-center justify-center w-full my-4 flex-wrap gap-4">
               {SocialLinks &&
                 SocialLinks.map((item) => (
@@ -300,7 +318,7 @@ function App() {
                     rel="noreferrer"
                   >
                     {item.iconSrc}
-                    <p className="text-lg text-textBase">{item.name}</p>
+                    <p className="text-lg text-textBase font-medium">{item.name}</p>
                   </motion.a>
                 ))}
             </div>
