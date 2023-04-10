@@ -292,9 +292,10 @@ function App() {
                     whileTap={{ scale: 0.8 }}
                     href={item.link}
                     key={item.id}
-                    className="w-full md:w-auto px-3 md:px-8 py-5 border 
+                    className="w-full md:w-auto px-3 md:px-8 py-4 border 
                   border-zinc-800 rounded-2xl hover:border-zinc-600 duration-100
-                  ease-in-out cursor-pointer flex items-center justify-center gap-3"
+                  ease-in-out cursor-pointer flex items-center justify-center gap-5 shadow-sm shadow-stone-600
+                  hover:scale-105"
                     target="_blank"
                     rel="noreferrer"
                   >
