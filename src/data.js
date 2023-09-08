@@ -22,8 +22,18 @@ export const Experience = [
     //     "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
     // },
     {
+      id: 1, 
+      date: "May 2023 - July 2023",
+      iconsSrc: <IoCodeWorking />,
+      title: "Software Engineering Intern | J.P. Morgan Chase & Co",
+      location: "Bangalore, India",
+      description:
+      "Contributed to the advancement of the organization's robust Document Manager web application. Improved user experience and productivity by implementing comprehensive row grouping, column filtering and data filtering functionality using Angular Ag-Grid.",
+      techStack: 'Angular · Ag-Grid · TypeScript · Karma · Jasmine · Unit Testing · Responsiveness · Agile Methodology'
+    },
+    { 
       id: 2,
-      date: "Jan 2022",
+      date: "Jan 2023",
       iconsSrc: <IoCodeWorking />,
       title: "UltraHacx Hackathon",
       location: "LPU, Punjab",
@@ -33,6 +43,17 @@ export const Experience = [
     },
     {
       id: 3,
+      date: "June 2022",
+      iconsSrc: <IoCodeWorking />,
+      title: "Code For Good | JPMorgan Chase",
+      location: "Remote",
+      description:
+        "Developed a comprehensive website utilizing the MERN Stack for online education, including live scheduling, content sharing, performance tracking, and analysis of student and teacher progress.",
+      techStack:
+        "HTML5 · CSS3 · Responsive Web Design · React.js · Node.js · MongoDB · Git",
+    },
+    {
+      id: 4,
       date: "Feb 2022 - Aug 2022",
       iconsSrc: <IoCodeWorking />,
       title: "Full Stack Web Developer | Edureka",
@@ -42,17 +63,6 @@ export const Experience = [
       techStack:
         "JavaScript · ReactJS · NodeJS · ExpressJS · MongoDB · REST APIs · Responsive Web Design",
         // Front-End Development · Back-End Web Development · 
-    },
-    {
-      id: 4,
-      date: "June 2022",
-      iconsSrc: <IoCodeWorking />,
-      title: "Code For Good | JPMorgan Chase",
-      location: "Remote",
-      description:
-        "Developed a comprehensive website utilizing the MERN Stack for online education, including live scheduling, content sharing, performance tracking, and analysis of student and teacher progress.",
-      techStack:
-        "HTML5 · CSS3 · Responsive Web Design · React.js · Node.js · MongoDB · Git",
     },
     {
       id: 5,
@@ -160,5 +170,5 @@ export const Experience = [
   ];
   
 export const Resume = {
-  link: 'https://drive.google.com/u/0/uc?id=1MPITmZ1dbwTZeEwWOPUkHqU5bLjE0sXc&export=download'
+  link: 'https://drive.google.com/uc?id=1qEqKXqHBNmrWMFcllO-K7oD5pvXEuZmh&export=download'
 }

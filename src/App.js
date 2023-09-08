@@ -125,7 +125,8 @@ function App() {
         </nav>
 
         {/* 3d desing */}
-        <div className="relative" id="home">
+        <div id="home" className="m-5"></div>
+        <div className="relative">
           <Spline scene="https://draft.spline.design/1SIsKQFH-TVtEI-0/scene.spline" />
 
           <div className="absolute bottom-0 w-full justify-center items-center flex">
@@ -137,9 +138,9 @@ function App() {
         {/* Main Section */}
         <main className="w-[80%] mt-5">
           {/* About section */}
+          <section id="about" className="m-5"></section>
           <section
             className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 my-24"
-            id="about"
           >
             {/* image box*/}
             <div className="w-full h-420 flex items-center justify-center">
@@ -237,9 +238,9 @@ function App() {
           </section>
 
           {/* Projects Section */}
+          <section id="projects" className="m-3"></section>
           <section
             className="flex flex-wrap items-center justify-around my-24 gap-6"
-            id="projects"
           >
             {Projects &&
               Projects.map((item) => (
@@ -280,8 +281,9 @@ function App() {
           </section>
 
           {/* Contact Section */}
-          <section className="text-gray-300 font-medium w-11/12 flex flex-col m-auto my-4" id="contact">
-            <p className="text-center text-3xl pb-5">Contact</p>
+          <section id="contact" className="mb-115"></section>
+          <section className="text-gray-300 font-medium w-11/12 flex flex-col m-auto my-4">
+            <p className="text-center text-3xl p-4">Contact</p>
               <label htmlFor="uname" className="flex flex-col text-xl">Name: 
                 <input type="text" name="uname" className="h-14 font-medium text-black rounded-md px-4 bg-gray-300"/>
               </label>
