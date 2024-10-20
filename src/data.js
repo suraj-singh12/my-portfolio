@@ -180,5 +180,6 @@ export const Experience = [
   ];
   
 export const Resume = {
-  link: 'https://drive.google.com/uc?id=1qEqKXqHBNmrWMFcllO-K7oD5pvXEuZmh&export=download'
+  link: 'https://drive.usercontent.google.com/u/0/uc?id=1eCiCNGHtatlBOFB6V7eOePNzCRSHa6ui&export=download'
 }
+
