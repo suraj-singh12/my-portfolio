@@ -23,6 +23,16 @@ export const Experience = [
     // },
     {
       id: 1, 
+      date: "Jan 2024 - Present",
+      iconsSrc: <IoCodeWorking />,
+      title: "Software Engineer I @ J.P. Morgan Chase & Co",
+      location: "Bangalore, India",
+      description:
+      "Focused on component-driven UI development, leveraging an in-house component library for creating efficient user interfaces. Integrated backend services using Spring Boot to deliver scalable and robust solutions.",
+      techStack: 'ReactJS · SpringBoot · AWS · JUnit · Agile Methodology'
+    },
+    {
+      id: 2, 
       date: "May 2023 - July 2023",
       iconsSrc: <IoCodeWorking />,
       title: "Software Engineering Intern | J.P. Morgan Chase & Co",
@@ -32,7 +42,7 @@ export const Experience = [
       techStack: 'Angular · Ag-Grid · TypeScript · Karma · Jasmine · Unit Testing · Responsiveness · Agile Methodology'
     },
     { 
-      id: 2,
+      id: 3,
       date: "Jan 2023",
       iconsSrc: <IoCodeWorking />,
       title: "UltraHacx Hackathon",
@@ -42,7 +52,7 @@ export const Experience = [
       techStack: 'Ethereum · Blockchain · React.js · Node.js · REST APIs'
     },
     {
-      id: 3,
+      id: 4,
       date: "June 2022",
       iconsSrc: <IoCodeWorking />,
       title: "Code For Good | JPMorgan Chase",
@@ -53,7 +63,7 @@ export const Experience = [
         "HTML5 · CSS3 · Responsive Web Design · React.js · Node.js · MongoDB · Git",
     },
     {
-      id: 4,
+      id: 5,
       date: "Feb 2022 - Aug 2022",
       iconsSrc: <IoCodeWorking />,
       title: "Full Stack Web Developer | Edureka",
@@ -65,7 +75,7 @@ export const Experience = [
         // Front-End Development · Back-End Web Development · 
     },
     {
-      id: 5,
+      id: 6,
       date: "Aug 2021 - May 2022",
       iconsSrc: <IoCodeWorking />,
       title: "Technical Team Member | GeeksForGeeks",
